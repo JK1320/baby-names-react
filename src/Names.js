@@ -1,24 +1,34 @@
 import React from 'react';
-import BabyNamesData from "./data/babyNamesData.json";
 
 
-const Names = () => {
-// const [namesData, setNamesData] = useState(BabyNamesData);
 
- {BabyNamesData.sort((a, b) => a.name > b.name ? 1 : -1)}
-               
-    return (
-        <div className="container">
-           <ul className="list-container">
-              
-                {BabyNamesData.map((item, index)=> (
-                    <li key={index} className="names"><button className={item.sex}>{item.name}</button></li>
-                )              
-                )}
-        
-            </ul>   
-        </div>
-    )
+const Names = ({BabyNamesData, searchInput}) => {
+
+  BabyNamesData.sort((a, b) => (a.name > b.name ? 1 : -1));
+
+  //  const filteredNames = BabyNamesData.filter((item) => {
+  //   item.name.toLowerCase().includes(searchInput.toLowerCase());
+  // });
+
+  return (
+    <div className="container">
+      <ul className="list-container">
+        {BabyNamesData.filter((item) => {
+          if (searchInput === "") {
+            return item;
+          } else if (
+            item.name.toLowerCase().includes(searchInput.toLowerCase())
+          ) {
+            return item;
+          }
+        }).map((item) => (
+          <li key={item.id} className="names">
+            <button className={item.sex}>{item.name}</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default Names;

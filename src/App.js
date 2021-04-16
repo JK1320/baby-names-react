@@ -4,6 +4,7 @@ import BabyNamesData from "./data/babyNamesData.json";
 import Favorites from './Favorites';
 import Names from "./Names";
 import Search from "./Search";
+import ResetSearch from "./ResetSearch";
 
 
 function App() {
@@ -25,6 +26,7 @@ return (
       favorite={favorite}
       setFavorite={setFavorite}
     />
+    <ResetSearch searchInput={searchInput} setSearchInput={setSearchInput} />
   </div>
 );
 }

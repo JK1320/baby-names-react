@@ -11,12 +11,21 @@ const Favorites = ({ favorite, setFavorite, BabyNamesData }) => {
     setFavorite(favorite.filter((i) => i !== id));
   }
 
+const hasNames = favoriteNames.length > 0;
+
   return (
-    <div>
-      <FavoriteNameList
+    <div className="container">
+        <h3>{hasNames ? "Favourites:" : "Click on a name to add to favourites"}</h3>
+        {hasNames && (
+            <>
+              <FavoriteNameList
         favoriteNameList={favoriteNames}
         onItemClick={removeFromFavorite}
       />
+      <hr/>
+      </>
+        )}
+    
     </div>
   );
 };

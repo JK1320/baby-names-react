@@ -8,16 +8,25 @@ import Search from "./Search";
 
 function App() {
 const [searchInput, setSearchInput] = useState("");
-// const [favorite, setFavorite] = useState([]);
+const [favorite, setFavorite] = useState([]);
 
-  return (
-    <div className="App">
-      <h1>Search for a Baby Name</h1>
-      <Search searchInput={searchInput} setSearchInput={setSearchInput} />
-      <Favorites />
-      <Names BabyNamesData={BabyNamesData} searchInput={searchInput} />  
-    </div>
-  );
+return (
+  <div className="App">
+    <h1>Search for a Baby Name</h1>
+    <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+    <Favorites
+      BabyNamesData={BabyNamesData}
+      favorite={favorite}
+      setFavorite={setFavorite}
+    />
+    <Names
+      BabyNamesData={BabyNamesData}
+      searchInput={searchInput}
+      favorite={favorite}
+      setFavorite={setFavorite}
+    />
+  </div>
+);
 }
 
 export default App;

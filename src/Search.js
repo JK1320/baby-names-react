@@ -22,9 +22,9 @@ useEffect(() => {
           setSearchInput(event.target.value);
         }}
       />
-       <button onClick={() => clickHandler("f")} className="gender-f-btn">G<i className='fas fa-baby girl' /></button>
-       <button onClick={() => clickHandler("m")} className="gender-m-btn">B<i className='fas fa-baby boy' /></button>
-       <button onClick={() => clickHandler("")} className="reset-search">Mixed</button>
+       <button onClick={() => clickHandler("f")} className="gender-f-btn">Girl Name<i className='fas fa-baby girl' /></button>
+       <button onClick={() => clickHandler("m")} className="gender-m-btn">Boy Name<i className='fas fa-baby boy' /></button>
+       <button onClick={() => clickHandler("")} className="reset-search">All Names</button>
     </div>
   );
 };

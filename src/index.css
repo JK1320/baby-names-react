@@ -1,27 +1,27 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .container {
-  background-color: rgb(245, 240, 240);
+  background-color: rgb(249, 247, 247);
   width: 80%;
-  border: 5px solid blue;
+  border: 5px solid rgb(18, 18, 18);
   margin-left: 10%;
 }
 
 .names {
- list-style: none;
- color: white;
+  list-style: none;
+  color: white;
 }
 
 .list-container {
@@ -32,23 +32,26 @@ code {
 }
 
 button {
- margin-right: 5px;
- margin-bottom: 5px;
- padding: 10px;
- font-size: 15px;
- border-radius: 15%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10%;
+  font-weight: 600;
 }
 
 button.m {
-  background-color: rgb(39, 2, 51);
-  color: rgb(139, 50, 199);
+  background-color: rgb(236, 241, 241);
+  color: rgb(3, 128, 238);
   cursor: pointer;
+  font-weight: 600;
 }
 
 button.f {
-  background-color: rgb(110, 110, 59);
-  color:rgb(245, 241, 12);
+  background-color: rgb(253, 253, 249);
+  color: rgb(190, 160, 50);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .input-container input {
@@ -57,6 +60,7 @@ button.f {
   padding-left: 10px;
   font-size: 20px;
   margin-top: 20px;
+  margin-right: 20px;
   border: 5px solid black;
 }
 
@@ -64,32 +68,32 @@ button.f {
   background-color: rgb(14, 13, 13);
   color: rgb(236, 243, 243);
   font-size: 20px;
-  border-radius: 15%;
+  border-radius: 10%;
   cursor: pointer;
 }
 
 .gender-f-btn {
-  background-color: rgb(242, 242, 156);
+  background-color: rgb(110, 110, 59);
   color: rgb(245, 241, 12);
   font-size: 20px;
-  border-radius: 15%;
+  border-radius: 10%;
   cursor: pointer;
 }
 
 .gender-m-btn {
-  background-color: rgb(39, 2, 51);
-  color: rgb(139, 50, 199);
+  background-color: rgb(45, 72, 96);
+  color: rgb(6, 134, 247);
   font-size: 20px;
-  border-radius: 15%;
+  border-radius: 10%;
   cursor: pointer;
 }
 
 .girl {
-  color: rgb(245, 241, 12);
+  color: rgb(77, 76, 4);
   font-size: 25px;
 }
 
 .boy {
- color: rgb(139, 50, 199);
+  color: rgb(139, 50, 199);
   font-size: 25px;
 }
